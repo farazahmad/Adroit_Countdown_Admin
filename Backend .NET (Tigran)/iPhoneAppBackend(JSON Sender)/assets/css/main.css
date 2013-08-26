@@ -1,0 +1,226 @@
+﻿html,body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    font-family: Calibri;
+}
+
+.wrapper
+{
+    width: 100%;
+}
+
+.header
+{
+    width: 100%;
+    background: #333333;
+    height: 85px;
+}
+.header hr
+{
+    border: none;
+    border-top: 3px dotted #BABABA;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.header_left
+{
+    float: left;
+    width: 30%;
+    padding-top: 11px;
+    text-align: left;
+}
+.header_center
+{
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+.header_center h1
+{
+    color: #CCCCCC;
+}
+.header_right
+{
+    float: left;
+    width: 30%;
+    padding-top: 11px;
+    text-align: right;
+}
+
+.dotted_left_1,.dotted_right_1
+{
+    width: 80%;
+}
+.dotted_left_2,.dotted_right_2
+{
+    width: 90%;
+}
+.dotted_left_3,.dotted_right_3
+{
+    width: 100%;
+}
+.sub_button
+{
+    background: none;
+    background-color: #9bcdff;
+    border: none;
+    width: 294px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.sub_button span
+{
+    font-size: 20px;
+    color: white;
+    padding-top: 5px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.content
+{
+    width: 100%;
+}
+.login_form
+{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 13%;
+    text-align: center;
+}
+.login_form input
+{
+    width: 290px;
+    height: 31px;
+    margin-bottom: 9px;
+    font-size: 15px;
+}
+
+.menu
+{
+    width: 100%;
+    text-align: right;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.menu ul li
+{
+    float: left;
+    margin-right: 57px;
+    height: 24px;
+    width: 120px;
+    text-align: center;
+    border-bottom: 3px solid #C9C9C9;
+}
+.menu ul li a
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #C9C9C9;
+}
+.menu ul .active
+{
+    border-bottom: 3px solid #333333;
+}
+.menu ul .active a
+{
+    color: #333333;
+}
+.menu ul .log_out
+{
+    width: 50px;
+    margin-right: 13px;
+    margin-left: 89px;
+}
+.menu ul .log_out a
+{
+    font-size: 12px;
+}
+
+.content h2
+{
+    background-color: #666666;
+    color: #ffffff;
+    padding-left: 3%;
+    width: 97%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.popup_form
+{
+    margin-top: 5%;
+    width: 496px;
+}
+.popup_form table
+{
+    width: 500px;
+}
+.popup_form textarea
+{
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 100px;
+}
+.popup_form .sub_button,.settings_form .sub_button
+{
+    background: none;
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #3399FF 0%, #0678BB 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #3399FF 0%, #0678BB 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top, #3399FF 0%, #0678BB 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3399FF), color-stop(1, #0678BB));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #3399FF 0%, #0678BB 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #3399FF 0%, #0678BB 100%);
+    width: 109px;
+    float: right;
+}
+.popup_form .sub_button
+{
+    margin-right: 17px;
+}
+.popup_form .sub_button span,.settings_form .sub_button span
+{
+    font-size: 16px;
+}
+
+.settings_form
+{
+    margin-left: 2%;
+    margin-top: 5%;
+    line-height: 32px;
+    width: 490px;
+}
+
+
+.error
+{
+    color: red;
+    font-size: 15px;
+}

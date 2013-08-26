@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test" Class="adminDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DEVELOPER;Initial Catalog=test;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="testConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.popup" Member="popups">
+    <Type Name="popup">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="details" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="button1" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="button2" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.settings" Member="settings">
+    <Type Name="setting">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_open_app" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="user_open_app_count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="after_editing_countdown" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="after_editing_color_countdown" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="after_swiping_events" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="after_share_or_save" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="after_crate_new_event" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="selecting_multiple_countdown" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="selecting_countdown_in_multiple" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[user]" Member="users">
+    <Type Name="user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="passowrd" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
